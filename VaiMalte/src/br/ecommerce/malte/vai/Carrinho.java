@@ -11,15 +11,16 @@ public class Carrinho {
 	}
 	
 	public void insere(Produto produto) {
-		for (Pedido compra: pedidos) {
-			if (pedidos.contains(compra)) {
-				compra.incrementa();
-			} 
-			else {
-				pedidos.add(new Pedido(produto));			
+		for (Pedido p: pedidos) {
+			if (pedidos.contains(p)) {
+				p.incrementa();
+				return;
 			}
-		}	
-	}
+		}
+		pedidos.add(new Pedido(produto));			
+			
+	}	
+	
 	
 	public List<Pedido> getPedidos() {
 		return this.pedidos;

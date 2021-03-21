@@ -10,12 +10,11 @@ public class Pedido {
 		this.quantidade = 1;
 	}
 	
-	public int incrementa() {
-		this.quantidade = quantidade + 1;	
-		return quantidade;
+	public void incrementa() {
+		this.quantidade = quantidade + 1;
 	}
 	
-	public double total(int quantidade, Produto produto) {
+	public double total() {
 		double preco_total = produto.getPreco()*quantidade;
 		return preco_total;
 	}

@@ -14,11 +14,6 @@ private Testador t;
 	}
 	
 	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
-	
-	@Test
 	public void testeA() {
 	    assertTrue(t.testeA());
 	}
