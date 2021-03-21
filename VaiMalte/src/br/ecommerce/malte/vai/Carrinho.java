@@ -12,15 +12,13 @@ public class Carrinho {
 	
 	public void insere(Produto produto) {
 		for (Pedido p: pedidos) {
-			if (pedidos.contains(p)) {
+			if (p.getProduto().getCodigo() == produto.getCodigo()) {
 				p.incrementa();
 				return;
 			}
 		}
-		pedidos.add(new Pedido(produto));			
-			
+		pedidos.add(new Pedido(produto));				
 	}	
-	
 	
 	public List<Pedido> getPedidos() {
 		return this.pedidos;
