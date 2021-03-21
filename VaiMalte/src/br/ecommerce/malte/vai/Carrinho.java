@@ -1,4 +1,4 @@
-	package br.ecommerce.malte.vai;
+package br.ecommerce.malte.vai;
 
 import java.util.ArrayList;
 import java.util.List;
