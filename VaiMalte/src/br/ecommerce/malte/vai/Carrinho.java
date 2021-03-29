@@ -7,7 +7,7 @@ public class Carrinho {
 	private List<Pedido> pedidos;
 	
 	public Carrinho() {
-		this.pedidos = new ArrayList<Pedido>();
+		this.pedidos = new ArrayList<>();
 	}
 	
 	public void insere(Produto produto) {

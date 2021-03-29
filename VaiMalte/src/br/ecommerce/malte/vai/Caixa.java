@@ -8,7 +8,7 @@ public class Caixa {
 	
 	
 	public Caixa() {
-		this.descontos = new HashMap<Integer, Integer>();
+		this.descontos = new HashMap<>();
 	}
 
 	public void insereDesconto(Produto produto, int porcentagem) {
